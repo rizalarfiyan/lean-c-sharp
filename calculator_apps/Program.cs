@@ -65,7 +65,7 @@ namespace CalculatorApps
             }
 
             input_first_value:
-            Console.Write("\nInput fist value: ");
+            Console.Write("\nInput first value: ");
             if (!int.TryParse(Console.ReadLine(), out firstvalue))
             {
                 Console.Write("Please input a valid number!\n");
