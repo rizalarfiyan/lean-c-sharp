@@ -1,4 +1,5 @@
-﻿using static vehicle_clasification.Constants;
+﻿using vehicle_clasification.vehicle;
+using static vehicle_clasification.Constants;
 
 namespace vehicle_clasification
 {
@@ -49,13 +50,13 @@ namespace vehicle_clasification
             switch (this.choose)
             {
                 case (int)VehicleType.Air:
-                    Console.WriteLine("choose air");
+                    new Air().Run();
                     break;
                 case (int)VehicleType.Land:
-                    Console.WriteLine("choose land");
+                    new Land().Run();
                     break;
                 case (int)VehicleType.Water:
-                    Console.WriteLine("choose water");
+                    new Water().Run();
                     break;
             }
         }
