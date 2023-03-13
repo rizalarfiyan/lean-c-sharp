@@ -1,7 +1,9 @@
-﻿namespace vehicle_clasification.vehicle
+﻿using static vehicle_clasification.Constants;
+
+namespace vehicle_clasification.vehicle
 {
     internal class Vehicle
     {
-        public string Type { set; get; }
+        public VehicleType Type { set; get; }
     }
 }

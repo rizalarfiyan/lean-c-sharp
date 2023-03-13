@@ -7,8 +7,7 @@ namespace KlasifikasiKendaraan
         static void Main(string[] args)
         {
             Services service = new Services();
-            service.PrintMenu();
-            service.ChooseInput();
+            service.Run();
         }
     }
 }

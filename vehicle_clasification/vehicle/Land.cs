@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using static vehicle_clasification.Constants;
 
 namespace vehicle_clasification.vehicle
 {
@@ -10,7 +6,7 @@ namespace vehicle_clasification.vehicle
     {
         public Land()
         {
-            Type = "darat";
+            Type = VehicleType.Land;
         }
     }
 }

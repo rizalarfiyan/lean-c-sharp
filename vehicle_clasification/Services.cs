@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using static vehicle_clasification.Constants;
 
 namespace vehicle_clasification
 {
-    internal class Services {
-        private int choose{ get; set; }
+    internal class Services
+    {
+        private int choose { get; set; }
 
         public void ChooseInput()
         {
-            choose_menu:
+        choose_menu:
             int chooseMenu;
             Console.Write("Choose type of vehicle: ");
             if (!int.TryParse(Console.ReadLine(), out chooseMenu))
@@ -20,7 +17,8 @@ namespace vehicle_clasification
                 goto choose_menu;
             }
 
-            int maxMenu = Constants.VehicleTypeLists().Length;
+            chooseMenu--;
+            int maxMenu = VehicleTypeLists().Length;
             if (chooseMenu < 0 || chooseMenu > maxMenu)
             {
                 Console.Write("Please input number between 1-{0}\n\n", maxMenu);
@@ -32,17 +30,41 @@ namespace vehicle_clasification
 
         public void PrintMenu()
         {
-            Console.WriteLine("=============================================================================");
+            Console.WriteLine("============================================================================");
             Console.WriteLine("========================= Clasification of Vehicle =========================");
-            Console.WriteLine("============================== by @rizalarfiyan =============================");
-            Console.WriteLine("=============================================================================");
+            Console.WriteLine("============================= by @rizalarfiyan =============================");
+            Console.WriteLine("============================================================================");
             Console.WriteLine();
             Console.WriteLine("Type of Vehicle: ");
-            string[] jenisKendaraan = Constants.VehicleTypeLists();
-            for (int i = 0; i < jenisKendaraan.Length; i++) {
-                Console.WriteLine("[{0}] {1} vehicle", i+1, jenisKendaraan[i]);
+            string[] jenisKendaraan = VehicleTypeLists();
+            for (int i = 0; i < jenisKendaraan.Length; i++)
+            {
+                Console.WriteLine("[{0}] {1} vehicle", i + 1, jenisKendaraan[i]);
             }
             Console.WriteLine();
+        }
+
+        public void ChooseQuery()
+        {
+            switch (this.choose)
+            {
+                case (int)VehicleType.Air:
+                    Console.WriteLine("choose air");
+                    break;
+                case (int)VehicleType.Land:
+                    Console.WriteLine("choose land");
+                    break;
+                case (int)VehicleType.Water:
+                    Console.WriteLine("choose water");
+                    break;
+            }
+        }
+
+        public void Run()
+        {
+            this.PrintMenu();
+            this.ChooseInput();
+            this.ChooseQuery();
         }
     }
 }
