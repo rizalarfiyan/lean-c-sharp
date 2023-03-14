@@ -1,5 +1,6 @@
 ﻿using vehicle_clasification.vehicle;
 using static vehicle_clasification.Constants;
+using static vehicle_clasification.vehicle.Vehicle;
 
 namespace vehicle_clasification
 {
@@ -31,10 +32,7 @@ namespace vehicle_clasification
 
         public void PrintMenu()
         {
-            Console.WriteLine("============================================================================");
-            Console.WriteLine("========================= Clasification of Vehicle =========================");
-            Console.WriteLine("============================= by @rizalarfiyan =============================");
-            Console.WriteLine("============================================================================");
+            Greeting();
             Console.WriteLine();
             Console.WriteLine("Type of Vehicle: ");
             string[] jenisKendaraan = VehicleTypeLists();

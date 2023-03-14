@@ -1,5 +1,5 @@
 ﻿using static vehicle_clasification.Constants;
-
+using static vehicle_clasification.vehicle.Vehicle;
 
 namespace vehicle_clasification.vehicle
 {
@@ -18,6 +18,13 @@ namespace vehicle_clasification.vehicle
             base.Input();
 
             this.HasMachine = this.InputBoolean("has machine");
+        }
+
+        public override void Result()
+        {
+            base.Result();
+
+            Console.WriteLine(" - Has Machine\t\t: {0}", BooleanToString(this.HasMachine));
         }
     }
 }

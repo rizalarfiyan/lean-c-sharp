@@ -17,5 +17,12 @@ namespace vehicle_clasification.vehicle
 
             this.Wheel = this.InputInteger("wheel");
         }
+
+        public override void Result()
+        {
+            base.Result();
+
+            Console.WriteLine(" - Wheel\t\t: {0}", this.Wheel);
+        }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using static vehicle_clasification.Constants;
-
+using static vehicle_clasification.vehicle.Vehicle;
 
 namespace vehicle_clasification.vehicle
 {
@@ -19,6 +19,14 @@ namespace vehicle_clasification.vehicle
 
             this.Seat = this.InputInteger("seat");
             this.IsCommercial = this.InputBoolean("is commercial");
+        }
+
+        public override void Result()
+        {
+            base.Result();
+
+            Console.WriteLine(" - Seat\t\t\t: {0}", this.Seat);
+            Console.WriteLine(" - Is Commercial\t: {0}", BooleanToString(this.IsCommercial));
         }
     }
 }

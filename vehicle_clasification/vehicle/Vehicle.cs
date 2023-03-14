@@ -17,7 +17,7 @@ namespace vehicle_clasification.vehicle
             string? readStr = Console.ReadLine();
             if (readStr == null)
             {
-                Console.Write("Please input a string!\n\n");
+                Console.Write("Please input a string!\n");
                 goto input;
             }
             return readStr;
@@ -33,6 +33,7 @@ namespace vehicle_clasification.vehicle
             {
                 readBool = true;
             }
+            Console.Write("\n\n");
             return readBool;
         }
 
@@ -43,17 +44,30 @@ namespace vehicle_clasification.vehicle
             Console.Write("\nInput {0} of {1} Vehicle: ", name, this.Type);
             if (!int.TryParse(Console.ReadLine(), out chooseMenu))
             {
-                Console.Write("Please input a valid number!\n\n");
+                Console.Write("Please input a valid number!\n");
                 goto input;
             }
 
             if (chooseMenu < 0)
             {
-                Console.Write("Please input number same or more than zero!\n\n");
+                Console.Write("Please input number same or more than zero!\n");
                 goto input;
             }
 
             return chooseMenu;
+        }
+
+        public static string BooleanToString(Boolean state)
+        {
+            return state ? "true" : "false";
+        }
+
+        public static void Greeting()
+        {
+            Console.WriteLine("============================================================================");
+            Console.WriteLine("========================= Clasification of Vehicle =========================");
+            Console.WriteLine("============================= by @rizalarfiyan =============================");
+            Console.WriteLine("============================================================================");
         }
 
         public virtual void Input()
@@ -65,7 +79,13 @@ namespace vehicle_clasification.vehicle
 
         public virtual void Result()
         {
-            Console.WriteLine("Result of {0}", this.Type);
+            Console.Clear();
+            Greeting();
+            Console.WriteLine();
+            Console.WriteLine("Result of {0} Vehicle Classification", this.Type);
+            Console.WriteLine(" - Name\t\t\t: {0}", this.Name);
+            Console.WriteLine(" - Machine\t\t: {0}", this.Machine);
+            Console.WriteLine(" - Fuel\t\t\t: {0}", this.Fuel);
         }
 
         public virtual void Run()
