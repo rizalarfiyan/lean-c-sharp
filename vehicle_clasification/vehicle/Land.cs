@@ -4,9 +4,18 @@ namespace vehicle_clasification.vehicle
 {
     internal class Land : Vehicle
     {
+        protected int Wheel { get; set; }
+
         public Land()
         {
-            Type = VehicleType.Land;
+            this.Type = VehicleType.Land;
+        }
+
+        public override void Input()
+        {
+            base.Input();
+
+            this.Wheel = this.InputInteger("wheel");
         }
     }
 }
