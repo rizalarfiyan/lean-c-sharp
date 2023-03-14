@@ -19,15 +19,14 @@ namespace vehicle_clasification
                 goto choose_menu;
             }
 
-            chooseMenu--;
             int maxMenu = VehicleTypeLists().Length;
-            if (chooseMenu < 0 || chooseMenu > maxMenu)
+            if (chooseMenu <= 0 || chooseMenu > maxMenu)
             {
                 Console.Write("Please input number between 1-{0}\n\n", maxMenu);
                 goto choose_menu;
             }
 
-            this.choose = chooseMenu;
+            this.choose = chooseMenu - 1;
         }
 
         public void PrintMenu()
