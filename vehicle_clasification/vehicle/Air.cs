@@ -27,6 +27,9 @@ namespace vehicle_clasification.vehicle
 
             Console.WriteLine(" - Seat\t\t\t: {0}", this.Seat);
             Console.WriteLine(" - Is Commercial\t: {0}", BooleanToString(this.IsCommercial));
+
+            Console.Write("\n");
+            Closing();
         }
     }
 }

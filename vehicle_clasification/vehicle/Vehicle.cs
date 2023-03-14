@@ -69,6 +69,14 @@ namespace vehicle_clasification.vehicle
             Console.WriteLine("============================= by @rizalarfiyan =============================");
             Console.WriteLine("============================================================================");
         }
+        
+        public static void Closing()
+        {
+            Console.WriteLine("============================================================================");
+            Console.WriteLine("================================= Thank you ================================");
+            Console.WriteLine("=============================== @rizalarfiyan ==============================");
+            Console.WriteLine("============================================================================");
+        }
 
         public virtual void Input()
         {

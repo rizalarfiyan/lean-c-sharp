@@ -23,6 +23,9 @@ namespace vehicle_clasification.vehicle
             base.Result();
 
             Console.WriteLine(" - Wheel\t\t: {0}", this.Wheel);
+
+            Console.Write("\n");
+            Closing();
         }
     }
 }

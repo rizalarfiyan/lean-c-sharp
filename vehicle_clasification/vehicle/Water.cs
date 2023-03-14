@@ -25,6 +25,9 @@ namespace vehicle_clasification.vehicle
             base.Result();
 
             Console.WriteLine(" - Has Machine\t\t: {0}", BooleanToString(this.HasMachine));
+
+            Console.Write("\n");
+            Closing();
         }
     }
 }
