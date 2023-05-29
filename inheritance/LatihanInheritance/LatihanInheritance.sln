@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatihanInheritance", "LatihanInheritance.csproj", "{BD0A3DC6-9041-4620-AF29-395091BC255B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD0A3DC6-9041-4620-AF29-395091BC255B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD0A3DC6-9041-4620-AF29-395091BC255B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD0A3DC6-9041-4620-AF29-395091BC255B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD0A3DC6-9041-4620-AF29-395091BC255B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3556EAC-8A0F-46B7-BCB2-28E916480E14}
+	EndGlobalSection
+EndGlobal
