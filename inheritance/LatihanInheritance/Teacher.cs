@@ -5,7 +5,7 @@
 
     public Teacher(string name, int age, string teacherId, string subject): base(name, age)
     {
-        TeacherId = teacherId;
-        Subject = subject;
+        this.TeacherId = teacherId;
+        this.Subject = subject;
     }
 }
