@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Printer Polimorphism", "Printer Polimorphism.csproj", "{6CB6E1E1-67D2-4E63-B5C5-6CAF3E3A331C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CB6E1E1-67D2-4E63-B5C5-6CAF3E3A331C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CB6E1E1-67D2-4E63-B5C5-6CAF3E3A331C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CB6E1E1-67D2-4E63-B5C5-6CAF3E3A331C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CB6E1E1-67D2-4E63-B5C5-6CAF3E3A331C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C60E1AA-264E-4C39-805F-3BA790369016}
+	EndGlobalSection
+EndGlobal
