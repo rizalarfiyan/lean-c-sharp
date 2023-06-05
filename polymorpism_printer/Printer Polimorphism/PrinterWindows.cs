@@ -2,11 +2,11 @@
 {
     public virtual void Show()
     {
-        Console.WriteLine("Printer display dimension: 10*10");
+        Console.WriteLine("Printer Windows display dimension: ");
     }
 
     public virtual void Print()
     {
-        Console.WriteLine("Printer printing....");
+        Console.WriteLine("Printer Windows printing....");
     }
 }
