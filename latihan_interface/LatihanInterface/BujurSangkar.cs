@@ -1,4 +1,4 @@
-﻿class BujurSangkar : ILuasBangunDatar
+﻿class BujurSangkar : BangunDatar, ILuasBangunDatar
 {
     private double sisi;
 
@@ -7,7 +7,7 @@
         this.sisi = sisi;
     }
 
-    public double HitungLuas()
+    public override double HitungLuas()
     {
         return sisi * sisi;
     }

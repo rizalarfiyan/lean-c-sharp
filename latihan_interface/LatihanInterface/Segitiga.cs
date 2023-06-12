@@ -1,4 +1,4 @@
-﻿class Segitiga : ILuasBangunDatar
+﻿class Segitiga : BangunDatar, ILuasBangunDatar
 {
     private double alas;
     private double tinggi;
@@ -9,7 +9,7 @@
         this.tinggi = tinggi;
     }
 
-    public double HitungLuas()
+    public override double HitungLuas()
     {
         return 0.5 * alas * tinggi;
     }

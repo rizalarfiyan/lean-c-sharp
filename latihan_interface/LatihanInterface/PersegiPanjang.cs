@@ -1,4 +1,4 @@
-﻿class PersegiPanjang : ILuasBangunDatar
+﻿class PersegiPanjang : BangunDatar, ILuasBangunDatar
 {
     private double panjang;
     private double lebar;
@@ -9,7 +9,7 @@
         this.lebar = lebar;
     }
 
-    public double HitungLuas()
+    public override double HitungLuas()
     {
         return panjang * lebar;
     }
