@@ -1,0 +1,4 @@
+﻿interface ILuasBangunDatar
+{
+    double HitungLuas();
+}
