@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-class BangunDatar
+class BangunDatar: ILuasBangunDatar
 {
     public virtual double HitungLuas()
     {
